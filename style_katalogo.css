@@ -15,7 +15,7 @@
 .fila_lista{
     display: flex;
     gap: 16px;
-    padding: 10px 40px;
+    padding: 200px 200px;
     overflow-x: auto;
 }
 
@@ -25,12 +25,15 @@
     border-radius: 10px;
     overflow: hidden;
     color: white;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta:hover{
+    transform: scale(10);
     box-shadow: 0 8px 20px rgba(255, 84, 84, 0.4);
+    transition-delay: 0,5s;
     transform: translateY(-4px);
+    z-index: 10;
 }
 
 .tarjeta_img{
