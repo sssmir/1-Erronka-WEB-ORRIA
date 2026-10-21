@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_erabiltzailea.css">
+    <title>Erabiltzailea</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="link"><a class="navbar1" href="index.html">Nombre empresa</a></li>
+            <button class="boton_katalogoa" onclick="abrirCatalogo()">Katalogoa</button>
+        </ul>
+        <a class="link_e" href="Erabiltzailea.html"><img class="erabiltzailea" src="img/erabiltzailea.png"></a>
+    </div>
+    <div class="perfil">
+        <h1>Ongi etorri!</h1>
+        <img src="img/erabiltzailea.png" class="perfil_foto">
+        <h2 class="perfil_titulo">Zure profila</h2>
+        <div class="perfil_dato">
+            <span class="perfil_etiqueta">Erabiltzailea</span>
+            <span id="perfilUsuario"></span>
+        </div>
+        <div class="perfil_dato">
+            <span class="perfil_etiqueta">Email-a</span>
+            <span id="perfilEmail"></span>
+        </div>
+        <div class="perfil_dato">
+            <span class="perfil_etiqueta">Jaiotze eguna</span>
+            <span id="perfilFecha"></span>
+        </div>
+        <div class="perfil_dato">
+            <span class="perfil_etiqueta">Pasahitza</span>
+            <span class="perfil_pass">
+                <span id="perfilPass">••••••••••••••••</span>
+                <button type="button" id="verPass" class="ojo" onclick="alternarPass()" aria-label="Erakutsi pasahitza"></button>
+            </span>
+        </div>
+        <button class="boton_cerrar" onclick="cerrarSesion()">Itxi saioa</button> 
+    </div>
+    <div class="footer">
+        <div>hola</div>
+    </div>
+    <script src="script.js"></script>
+    <script>cargarPerfil();</script>
+</body>
+</html>

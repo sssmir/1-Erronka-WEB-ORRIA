@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+    margin: 0;
+
+} 
+
+.box{
+    position: relative;
+    display: block;
+    width: 33%;
+    height: 70vh;
+    margin: 40px auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 10px 13px #ff0000;
+
+}
+
+.iniciosesion{  
+    text-align: center;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: black;
+    padding: 10px;
+    
+}
+
+.foto2{
+    display: block;
+    margin: auto;
+    top: 10%;
+    height: 25%;
+    width: 25%;
+
+}
+
+.usuario{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10%;
+    padding: 10px;
+
+}
+
+.infousuario{
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 350%;
+    height: 100%;
+    font-size: 20px;
+
+}
+
+.contraseña{
+    position: absolute;
+    bottom: 40%;
+    margin-left: 10%;
+    padding: 10px;
+
+}
+
+.infocon{
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 415%;
+    height: 100%;
+    font-size: 20px;    
+
+}
+
+.sesion_mantener{
+    position: absolute;
+    top: 72%;
+    left: 15%;
+    
+}
+
+.boton_iniciosesion{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    top: 80%;
+    border: none;
+    border-radius: 15px;
+    background-color: red;
+    width: 72%;
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-size: 1em;
+
+}
+
+
+.boton_iniciosesion:hover{
+    background-color: rgb(255, 84, 84);
+    box-shadow: 2px 10px 13px #111;
+
+}
+
+.registro{
+    position: absolute;
+    top: 90%;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    color: black;
+    width: 28%;
+
+}
+
+.registro:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 0px #ffffff;
+
+}

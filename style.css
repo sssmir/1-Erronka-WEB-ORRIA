@@ -1,0 +1,126 @@
+body{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    min-height: 100vh;          
+    display: flex;              
+    flex-direction: column;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 20px;
+    margin: 0;
+    background-color: black;
+
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.link{
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+
+}
+
+.link_e{
+    display: flex;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.navbar1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1em;
+
+}
+
+.navbar1:hover{
+    box-shadow: 0px 10px 13px #717171; 
+    background-color: rgb(255, 84, 84);
+
+}
+
+.erabiltzailea{ 
+    display: block;
+    height: 20px;
+    width: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0;
+
+}
+
+.erabiltzailea:hover{
+    box-shadow: 2px 10px 13px #717171;
+    background-color: rgb(255, 84, 84);
+}
+
+.mensaje{
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    display: none;
+}
+
+.boton_katalogoa{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1em;
+    
+}
+
+.boton_katalogoa:hover{
+    background-color: rgb(255, 84, 84);
+    box-shadow: 2px 10px 13px #717171;
+}
+
+.footer{
+    box-sizing: border-box;
+    background-color: gray;
+    width: 100%;
+    padding: 20px;
+    margin-top: auto;
+
+}

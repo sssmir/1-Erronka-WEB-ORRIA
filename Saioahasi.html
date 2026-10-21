@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_saioahasi.css">
+    <title>Pasahitzak</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="link"><a class="navbar1" href="index.html">Nombre empresa</a></li>            
+        </ul>
+        <a class="link_e" href="Saioahasi.html"><img class="erabiltzailea" src="img/erabiltzailea.png"></a>
+    </div>
+    <div class="box">
+        <div class="iniciosesion">Hasi saioa</div>
+        <div ><img src="img/erabiltzailea.png" class="foto2"></div>
+        <form id="formLogin">
+            <div class="is">
+                <div class="usuario">
+                    <div>Erabiltzailea</div>
+                    <input type="text" id="loginUsuario" class="infousuario">
+                </div>
+                <div class="contraseña">
+                    <div>Pasahitza</div>
+                    <input type="password" id="loginPass" class="infocon">
+                </div>
+                <div>
+                    <label class="sesion_mantener">
+                        <input type="checkbox" id="mantener">
+                        <span class="checkmark">Sesioa irekita mantendu</span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="boton_iniciosesion">Hasi saioa</button>
+        </form>
+        <div id="mensaje" class="mensaje"></div>
+        <div class="resgistro"><a href="Erregistroa.html" class="registro">Sortu kontu berria</a></div>      
+    </div>
+    <div class="footer">
+        <div>hola</div>
+    </div>
+    <script src="script.js">actualizarIcono();</script>
+    <script>
+        document.getElementById('formLogin').addEventListener('submit', iniciarSesion);
+        if (location.search.includes('registrado=1'))
+        mensaje('Kontua sortu da. Saioa has dezakezu.', '#27ae60');
+        if (location.search.includes('acceso=1'))
+        mensaje('Katalogoa ikusteko saioa hasi behar duzu.');
+        if (usuarioActual()) window.location.href = sessionStorage.getItem('destino') || 'index.html';
+    </script>
+</body>
+</html>
