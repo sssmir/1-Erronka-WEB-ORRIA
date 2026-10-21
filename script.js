@@ -24,6 +24,7 @@ function registrar(e) {
   if (!email || !fecha || !usuario || !pass || !pass2) return mensaje('Bete eremu guztiak.');
   if (pass !== pass2) return mensaje('Pasahitzak ez datoz bat.');
   if (usuarios[usuario]) return mensaje('Erabiltzaile hori badago jada.');
+  if (email[email]) return mensaje('Email hori badago jada.');
 
   usuarios[usuario] = { pass, email, fecha };
   localStorage.setItem('usuarios', JSON.stringify(usuarios));
