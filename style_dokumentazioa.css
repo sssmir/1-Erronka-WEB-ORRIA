@@ -1,4 +1,4 @@
-.markdown_titulo{
+.dokumentazio_titulo{
     color: black;
     margin-top: 30px;
     margin-left: 40px;
@@ -6,21 +6,16 @@
 
 }
 
-.fila{
+.fila_lista{
+    display: flex;
+    gap: 16px;
+    padding: 100px 40px;
     margin-bottom: 0px;
     margin-left: 250px;
 
 }
 
-.fila_lista{
-    display: flex;
-    gap: 16px;
-    padding: 100px 40px;
-    width: 100%;
-
-}
-
-.tarjeta{
+.box{
     display: flex;
     flex: 0 0 300px;
     border-radius: 10px;
@@ -31,7 +26,7 @@
     
 }
 
-.tarjeta2{
+.box2{
     display: flex;
     flex: 0 0 300px;
     border-radius: 10px;
@@ -41,7 +36,7 @@
     
 }
 
-.tarjeta:hover, .tarjeta2:hover{
+.box:hover, .box2:hover{
     position: relative;
     transition-delay: 0,8s;
     transform: scale(1.1);
@@ -50,7 +45,7 @@
 
 }
 
-.tarjeta_img{
+.box_img{
     display: block;
     width: 100%;
     object-fit: cover;        
@@ -62,13 +57,13 @@
 
 }
 
-.tarjeta_titulo{
+.box_titulo{
     padding: 10px;
     font-weight: bold;
 
 }
 
-.trailer{
+.box_link{
     text-decoration: none;
     color: white;
 
