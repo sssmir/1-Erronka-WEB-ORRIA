@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: white;
     margin: 0;
 
 } 
@@ -12,7 +12,7 @@ body{
     margin: 40px auto;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 0px 10px 13px #ff0000;
+    box-shadow: 0px 10px 13px #8bfffd;
 
 }
 
@@ -83,6 +83,11 @@ body{
     
 }
 
+.sesion_mantener:hover{
+    color: gray;
+    
+}
+
 .boton_iniciosesion{
     position: absolute;
     text-align: center;
@@ -93,7 +98,7 @@ body{
     top: 80%;
     border: none;
     border-radius: 15px;
-    background-color: red;
+    background-color:rgb(0, 255, 255);
     width: 72%;
     text-decoration: none;
     color: black;
@@ -104,7 +109,7 @@ body{
 
 
 .boton_iniciosesion:hover{
-    background-color: rgb(255, 84, 84);
+    background-color: rgb(200, 255, 255);
     box-shadow: 2px 10px 13px #111;
 
 }
@@ -123,7 +128,7 @@ body{
 }
 
 .registro:hover{
-    color: black;
+    color: gray;
     background-color: white;
     box-shadow: 0px 0px 0px #ffffff;
 

@@ -1,0 +1,75 @@
+.markdown_titulo{
+    color: black;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+
+}
+
+.fila{
+    margin-bottom: 0px;
+    margin-left: 250px;
+
+}
+
+.fila_lista{
+    display: flex;
+    gap: 16px;
+    padding: 100px 40px;
+    width: 100%;
+
+}
+
+.tarjeta{
+    display: flex;
+    flex: 0 0 300px;
+    border-radius: 10px;
+    margin-right: 25%;
+    color: white;
+    background-color: #000000;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.tarjeta2{
+    display: flex;
+    flex: 0 0 300px;
+    border-radius: 10px;
+    color: white;
+    background-color: #000000;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.tarjeta:hover, .tarjeta2:hover{
+    position: relative;
+    transition-delay: 0,8s;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgb(200, 255, 255, 0.4);
+    z-index: 1;
+
+}
+
+.tarjeta_img{
+    display: block;
+    width: 100%;
+    object-fit: cover;        
+    object-position: center;
+    border-radius: 10px;
+    background-color: #333;    
+    background-size: cover;    
+    background-position: center;
+
+}
+
+.tarjeta_titulo{
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.trailer{
+    text-decoration: none;
+    color: white;
+
+}

@@ -10,7 +10,7 @@
 <body>
     <div class="navbar">
         <ul>
-            <li class="link"><a class="navbar1" href="index.html">Nombre empresa</a></li>            
+            <li class="link"><a class="navbar1" href="index.html">Erronka</a></li>            
         </ul>
         <a class="link_e" href="Saioahasi.html"><img class="erabiltzailea" src="img/erabiltzailea.png"></a>
     </div>
@@ -34,22 +34,14 @@
                     </label>
                 </div>
             </div>
-            <button type="submit" class="boton_iniciosesion">Hasi saioa</button>
+            <a href="index.html" class="boton_iniciosesion">Hasi saioa</a>
         </form>
         <div id="mensaje" class="mensaje"></div>
         <div class="resgistro"><a href="Erregistroa.html" class="registro">Sortu kontu berria</a></div>      
     </main>
     <div class="footer">
-        <div>hola</div>
-    </div>
-    <script src="script.js">actualizarIcono();</script>
-    <script>
-        document.getElementById('formLogin').addEventListener('submit', iniciarSesion);
-        if (location.search.includes('registrado=1'))
-        mensaje('Kontua sortu da. Saioa has dezakezu.', '#27ae60');
-        if (location.search.includes('acceso=1'))
-        mensaje('Katalogoa ikusteko saioa hasi behar duzu.');
-        if (usuarioActual()) window.location.href = sessionStorage.getItem('destino') || 'index.html';
-    </script>
+        <div>1. Erronka / UNI EIBAR-ERMUA</div>
+        <div>2026/10/19-30</div>
+    </div> 
 </body>
 </html>
