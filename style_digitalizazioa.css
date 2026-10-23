@@ -1,7 +1,20 @@
-.dokumentazio_titulo{
-    color: black;
-    margin-top: 30px;
+.digi_dok{
     margin-left: 40px;
-    margin-bottom: 10px;
+    left: 20%;
+
+}
+
+.digi_dok_img{
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+li{
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
