@@ -7,24 +7,13 @@
 
 .row{
     display: flex;
-    gap: 275px;
+    gap: 50px;
     padding: 65px 40px;
-    margin-left: 18%;
-}
-
-.row_mid{
-    display: flex;
-    gap: 275px;
-    padding: 65px 40px;
-    justify-content: center;
-    margin-right: 30px;
-
-
 }
 
 .box{
     display: flex;
-    flex: 0 0 300px;
+    flex: 0 0 250px;
     border-radius: 10px;
     background-color: #000000;
     box-shadow: 0px 10px 13px #8bfffd;   
