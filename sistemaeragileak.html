@@ -16,11 +16,155 @@
         <a href="Saioahasi.html"><img class="erabiltzailea" src="img/erabiltzailea.png"></a>
     </div>
     <main>
-    <h2 class="dokumentazio_titulo">Sistema eragileak</h2>
+        <div class="sist_dok">
+            <h1>Sistema eragileak ezartzea</h1>
+                <img src="img/image46.png" alt="Azala" style="max-width:600px; width:100%;">
+            <h2>Aurkibidea</h2>
+                <ul>
+                    <li><a href="#sistema-informatikoa">1. Lehen atala</a></li>
+                    <li><a href="#instalazioa">2. Sistemaren instalazioa</a></li>
+                    <li><a href="#konfigurazioak">3. Oinarrizko konfigurazioak</a></li>
+                    <li><a href="#zerbitzuak">4. Zerbitzuak</a></li>
+                    </ul>
+        </div>
 
+        <hr>
 
+        <div class="sist_dok">
+            <h2 id="sistema-informatikoa">1. Lehen atala</h2>
+                <h3>Zer da sistema informatiko bat?</h3>
+                    <p>Informazioa jaso, gorde, prozesatu eta komunikatzeko elkarrekin lan egiten duten elementuen multzoa da. Hiru atal ditu:</p>
+                    <ul>
+                        <li><strong>Hardwarea:</strong> osagai fisikoak (prozesadorea, memoria, diskoa, periferikoak).</li>
+                        <li><strong>Softwarea:</strong> programak eta aplikazioak (sistema eragilea, utilitateak).</li>
+                        <li><strong>Pertsonak:</strong> sistema erabili, garatu eta mantentzen dutenak.</li>
+                    </ul>
+                    <h3>Zer da sistema eragilea?</h3>
+                        <p>Hardwarearen, erabiltzaileen eta aplikazioen arteko bitartekaria den softwarea da. Funtzio nagusiak:</p>
+                        <ol>
+                            <li>Prozesuen kudeaketa.</li>
+                            <li>Memoriaren kudeaketa.</li>
+                            <li>Fitxategi-sistemaren kudeaketa.</li>
+                            <li>Sarrera/irteeren kudeaketa.</li>
+                            <li>Segurtasuna eta babesa.</li>
+                            <li>Erabiltzaile-interfazea (CLI edo GUI).</li>
+                            <li>Sareen eta baliabideen kudeaketa.</li>
+                        </ol>
+                        <p>Arkitektura orokorra: <strong>nukleoa (kernel)</strong>, <strong>sistema-deiak (API)</strong>, <strong>shell edo interfazea</strong>, eta <strong>aplikazioak eta erabiltzailea</strong>.</p>
+                    <h3>Sistema eragile ezberdinak</h3>
+        </div>
+                <table border="1" cellpadding="6" cellspacing="0">
+                    <thead>
+                        <tr>
+                        <th></th>
+                        <th>Windows</th>
+                        <th>macOS</th>
+                        <th>Linux</th>
+                        <th>Android</th>
+                        <th>iOS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Lizentzia</strong></td>
+                            <td>Jabedunekoa, ordainpekoa</td>
+                            <td>Jabedunekoa, Apple ekipoekin dator</td>
+                            <td>Software librea (GPL)</td>
+                            <td>AOSP irekia, Google zerbitzuak lizentziapean</td>
+                            <td>Itxia, Apple gailuetan soilik</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ezaugarriak</strong></td>
+                            <td>Bateragarritasun handia, GUI intuitiboa</td>
+                            <td>UNIX oinarria, ekosistema integratua</td>
+                            <td>Egonkorra, segurua, pertsonalizagarria</td>
+                            <td>Ukitzeko interfazea, aplikazio-denda zabala</td>
+                            <td>Segurua, errendimendu optimizatua</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Erabilera</strong></td>
+                            <td>Etxea, bulegoa, enpresak</td>
+                            <td>Diseinua, multimedia, garapena</td>
+                            <td>Zerbitzariak, hodeia, IoT</td>
+                            <td>Mugikorrak, tabletak, telebistak</td>
+                            <td>iPhone, iPad</td>
+                        </tr>
+                    </tbody>
+                </table>
 
+        <hr>
 
+        <div class="sist_dok">
+            <h2 id="instalazioa">2. Sistemaren instalazioa</h2>
+                <p>Makina birtualean lan egingo dugunez, <strong>VirtualBox</strong> erabili dugu, <strong>Windows Server 2025 Standard</strong> instalatzeko. Prozesua: makina berri bat sortu, izena, ISO-a eta bertsioa aukeratu, RAM-a, CPU-a eta biltegiratzea ezarri, eta abiarazi.</p>
+                <p>Instalazioan bertsioa aukeratu behar da:</p>
+                <ul>
+                    <li><strong>Core:</strong> interfaze grafikorik gabe, terminal huts bat.</li>
+                    <li><strong>Standard:</strong> lizentzia ordaindu eta kito.</li>
+                    <li><strong>Datacenter:</strong> garestiagoa, nukleo bakoitzeko ordaintzen da eta ez du mugarik birtualizazioan.</li>
+                </ul>
+                <img src="img/image67.png" alt="Windows Server bertsioak" style="max-width:500px; width:100%;">
+                <p>Gero lizentzia eta baldintzak onartu, "instalatu" aukera hautatu (ez dagoelako lehendik sistemarik), diskoa aukeratu eta instalazioa amaitu arte itxaron.</p>
+        </div>
+
+        <hr>
+
+        <div class="sist_dok">
+            <h2 id="konfigurazioak">3. Oinarrizko konfigurazioak</h2>
+                <h3>IP</h3>
+                    <p>IP finko bat ezarri dugu: <em>Configuración → Red e internet → Ethernet → Asignación IP → Manual</em>. Gateway-aren IP-a jakiteko, <code>cmd</code>-n <code>ipconfig</code> erabil daiteke.</p>
+                <h3>Erabiltzaileak eta taldeak sortzea</h3>
+                <p><code>Win+X</code> → <em>Administración de equipos</em> → <em>Usuarios y grupos locales</em>. Bertan erabiltzaile bakoitza (<em>Usuarios</em>) eta talde bakoitza (<em>Grupos</em>) sortu dugu, taldeen bidez baimen ezberdinak emateko.</p>
+                <h3>Erabiltzaileak eta taldeak administratzea</h3>
+                    <ul>
+                        <li><strong>Pasahitz-arauak:</strong> <em>Directiva de seguridad local → Directivas de cuenta → Directivas de contraseñas</em>. Konplexutasuna eta gutxieneko luzera aldatu ditugu.</li>
+                        <li><strong>Kontuaren blokeoa:</strong> pasahitz-hutsegite kopuru maximoa ezarri dugu, kontua blokeatzeko.</li>
+                        <li><strong>Baimenak:</strong> <code>inetpub</code> karpetaren <em>Propiedades → Seguridad → Editar</em> atalean, ikasleari aldaketak egiteko baimena kendu diogu.</li>
+                    </ul>
+                <h3>Kuotak ezartzea</h3>
+                    <p>Diskoaren <em>Propiedades → Cuota…</em> atalean, kuota-administrazioa gaitu eta erabiltzaile bakoitzaren mugak ezarri ditugu.</p>
+                <h3>RAID</h3>
+                    <ul>
+                        <li><strong>RAID-1 (ispilatua):</strong> bi disko datu berberekin; batek huts egiten badu, besteak berreskuratzen ditu datuak.</li>
+                        <li><strong>RAID-5:</strong> disko bat galduz gero, beste biren datuekin berreskura daiteke, daturik galdu gabe.</li>
+                    </ul>
+                    <p>VirtualBox-en gutxienez 3 disko birtual sortu eta makinari gehitu behar zaizkio (<em>Almacenamiento → Añadir disco</em>). <strong>Gogoratu:</strong> kontrolagailu birtualean SATA gehiago jarri behar dira.</p>
+                    <img src="img/image96.png" alt="SATA kontrolagailua" style="max-width:600px; width:100%;">
+                    <p>Gero, <code>Win+X</code> → <em>Administración de discos</em> atalean, <em>Nuevo volumen</em> aukeratu, diskoak, letra eta formatua ezarri. RAID-5-erako prozesua berdina da, funtzioa soilik aldatzen da.</p>
+                    <img src="img/image64.png" alt="RAID emaitza" style="max-width:480px; width:100%;">
+                <h3>Babeskopia</h3>
+                    <p><em>Administrar → Agregar roles y características → Características</em> atalean <strong>Windows Server Backup</strong> instalatu dugu. Gero <em>Copia de seguridad local → Programar copia de seguridad</em> atalean ordutegia eta helmuga ezarri ditugu. Gomendagarriena sistematik aparteko disko bat erabiltzea da, sistemaren diskoaren tamaina bera edo handiagoa duena.</p>
+                    <img src="img/image43.png" alt="Windows Server Backup" style="max-width:400px; width:100%;">
+            </div>
+
+            <hr>
+
+        <div class="sist_dok">
+            <h2 id="zerbitzuak">4. Zerbitzuak</h2>
+                <h3>Instalazioak</h3>
+                    <p><em>Administrar → Agregar roles y características</em> atalean beharrezko rolak aukeratu ditugu: <strong>DHCP</strong>, <strong>DNS</strong> eta <strong>IIS</strong>.</p>
+                    <img src="img/image28.png" alt="Rolen aukeraketa" style="max-width:400px; width:100%;">
+                <h3>DNS</h3>
+                    <p>Izen bat IP batekin lotzen du, eta alderantziz. Urratsak:</p>
+                    <ol>
+                        <li><em>Herramientas → DNS</em> ireki eta zerbitzaria aukeratu.</li>
+                        <li>Bilaketa-zona zuzena eta alderantzizkoa sortu (alderantzizkorako, sarearen IDa behar da).</li>
+                        <li>Errorerik agertzen bada, konfigurazioa eskuz jarraitu: <em>Host nuevo</em> sortu eta zerbitzariaren IP-ra lotu.</li>
+                        <li><em>Servidores de nombres</em> atalean zerbitzariaren IP-a jarri (<em>Resolver</em>), bi zonetan.</li>
+                        <li>Egiaztatu <code>cmd</code>-n <code>nslookup</code> bidez.</li>
+                    </ol>
+                    <img src="img/image48.png" alt="DNS egiaztapena" style="max-width:350px; width:100%;">
+                <h3>IIS</h3>
+                    <p>Web bidezko sarbidea eskaintzen du. Konfigurazioa:</p>
+                    <ol>
+                        <li>IIS kudeatzailea ireki eta <em>Sitios</em> atalean zerbitzaria aukeratu.</li>
+                        <li><em>Default Web Site → Explorar</em> bidez <code>wwwroot</code> karpetara joan; lehenetsitako orria ezabatu eta gurea itsatsi.</li>
+                        <li><em>Enlaces</em> atalean zerbitzariaren IP-a gehitu, eta <em>Host</em> atalean DNS zerbitzuko host-aren helbidea jarri.</li>
+                    </ol>
+                    <img src="img/image95.png" alt="IIS enlaces" style="max-width:500px; width:100%;">
+                    <p>Egiaztapena: zerbitzariaren IP-arekin eta DNS helbidearekin, bai zerbitzaritik bai beste gailu batetik.</p>
+        </div>
+        <br>
     </main>
     <div class="footer">
         <div>1. Erronka / UNI EIBAR-ERMUA</div>
