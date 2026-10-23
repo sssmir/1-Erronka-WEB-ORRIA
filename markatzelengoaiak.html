@@ -15,11 +15,106 @@
         </ul>
         <a href="Saioahasi.html"><img class="erabiltzailea" src="img/erabiltzailea.png"></a>
     </div>
+    <main>
+        <div class="mark_dok">
+            <h1>Web Orriaren Garapena - Proiektuaren Dokumentazioa</h1>
+                <h2>1. Weborriaren Garapena</h2>
+                        <p>Proiektu honen weborria <strong>HTML5</strong> eta <strong>CSS3</strong> erabiliz garatu dugu, beste liburutegi edo framework-ik gabe. Weborriak bi fitxategi nagusi ditu: <code>index.html</code> (egitura) eta <code>style.css</code> (itxura).</p>
+                        <img src="img/markatzeirudia1.png" alt="markatzeirudia1">
+                        <img src="img/markatzeirudia2.png" alt="markatzeirudia2">
+        </div>
 
+        <hr>
 
+        <div class="mark_dok">
+                <h2>2. Visual Studio Code</h2>
+                    <h3>2.1. HTML</h3>
+                        <p>HTML erabili dugu orriaren egitura definitzeko. Erabilitako elementu eta atributu nagusiak:</p>
+                        <ul>
+                            <li><strong>Fitxategi estiloa lotzeako:</strong> <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>.</li>
+                            <li><strong>Edukiontzien antolaketa:</strong> <code>&lt;div&gt;</code> elementuak (<code>navbar</code> eta <code>footer</code>).</li>
+                            <li><strong>Nabigazioa:</strong> <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code> eta <code>&lt;a&gt;</code> elementuak, orri desberdinak lotzeko (<code>index.html</code>, <code>dokumentazioa.html</code>, <code>Saioahasi.html</code>).</li>
+                            <li><strong>Irudiak:</strong> <code>&lt;img&gt;</code> elementua logoa eta erabiltzaile-ikonoa txertatzeko.</li>
+                            <li><strong>Klaseak:</strong> <code>class</code> atributua elementuei estiloa emateko (<code>link</code>, <code>navbar1</code>, <code>erabiltzailea</code>, <code>logo</code>, <code>footer</code>).</li>
+                        </ul>
+        </div>
 
+        <hr>
 
+        <div class="mark_dok">
+                    <h3>2.2. CSS</h3>
+                        <p>CSS erabili dugu orriaren diseinua eta itxura definitzeko.</p>
+                        <p><strong>Erabilitako propietate nagusiak:</strong></p>
+                        <ul>
+                            <li><strong>Testua:</strong> <code>font-family</code>, <code>font-size</code>, <code>text-decoration</code>, <code>color</code>.</li>
+                            <li><strong>Kutxa-eredua:</strong> <code>margin</code>, <code>padding</code>, <code>height</code>, <code>width</code>, <code>box-sizing</code>.</li>
+                            <li><strong>Koloreak:</strong> <code>background-color</code>, <code>rgb()</code> eta <code>color</code>.</li>
+                            <li><strong>Itxura:</strong> <code>border-radius</code>, <code>box-shadow</code>.</li>
+                            <li><strong>Kokapena:</strong> <code>position</code>, <code>left</code>, <code>right</code>.</li>
+                            <li><strong>Diseinua:</strong> <code>display</code>, <code>flex-direction</code>, <code>justify-content</code>, <code>align-items</code>.</li>
+                        </ul>
+                        <p><strong>Selektoreak:</strong></p>
+                        <ol>
+                            <li><strong>Etiketa-selektoreak:</strong> <code>body</code>.</li>
+                            <li><strong>Klase-selektoreak:</strong> <code>.navbar</code>, <code>.link</code>, <code>.navbar1</code>, <code>.erabiltzailea</code>, <code>.logo</code>, <code>.footer</code>.</li>
+                            <li><strong>Pseudo-klaseak:</strong> <code>:hover</code>, saguaren gainean jartzean efektuak sortzeko.</li>
+                        </ol>
+        </div>
 
+        <hr>
+
+        <div class="mark_dok">
+                    <h3>2.3. Flexbox</h3>
+                        <p>Elementuak antolatzeko <strong>Flexbox</strong> diseinu-sistema erabili dugu.</p>
+
+                        <ul>
+                            <li><strong><code>body</code>:</strong> <code>display: flex</code> eta <code>flex-direction: column</code>, elementuak zutabean antolatzeko.</li>
+                            <li><strong><code>.navbar</code>:</strong> <code>justify-content: space-between</code> eta <code>align-items: center</code>, loturak ezkerrean eta erabiltzaile-ikonoa eskuinean jartzeko, bertikalki zentratuta.</li>
+                            <li><strong><code>.footer</code>:</strong> <code>flex-direction: row</code> eta <code>justify-content: space-between</code>.</li>
+                            <li><strong><code>margin-top: auto</code></strong> footer-ean, orriaren behealdean mantentzeko.</li>
+                            <li><strong><code>min-height: 100vh</code></strong> <code>body</code>-n, orriak pantailaren altuera osoa har dezan.</li>
+                        </ul>    
+        </div>
+        
+        <hr>
+
+        <div class="mark_dok">
+                    <h3>2.4. Interaktibitatea eta Efektuak</h3>
+                        <p>JavaScript erabili gabe, <strong>CSS-ko <code>:hover</code> pseudo-klasea</strong> erabili dugu interaktibitatea lortzeko:</p>
+                        <ul>
+                            <li><strong>Nabigazio-loturak (<code>.navbar1:hover</code>):</strong> itzala (<code>box-shadow</code>) eta kolore argiagoa.</li>
+                            <li><strong>Erabiltzaile-ikonoa (<code>.erabiltzailea:hover</code>):</strong> efektu bera.</li>
+                        </ul>
+        </div>
+
+        <hr>
+
+        <div class="mark_dok">
+                    <h3>2.5. Fitxategien Antolaketa</h3>
+                        <pre>
+                            1-Erronka-WEB-ORRIA/
+                            ├── index.html
+                            ├── dokumentazioa.html
+                            |   ├── sareak.html
+                            |   |   └── style_sareak.css
+                            |   ├── sistemaeragileak.html
+                            |   |   └── style_sistemaeragileak.css
+                            |   ├── datubaseak.html
+                            |   |   └── style_datubaseak.css
+                            |   └── digitalizazioa.html
+                            |       └── style_digitalizazioa.css
+                            ├── Saioahasi.html
+                            |   |   └── style_saioahasi.css
+                            |   └── Erregistroa.html
+                            |       └── style_erregistroa.css
+                            ├── style.css
+                            └── img/
+                                ├── erabiltzailea.png
+                                └── infogramak-UNI-45-e1620890341119-1.png
+                        </pre>
+        </div>
+        <br>
+    </main>
     <div class="footer">
         <div>1. Erronka / UNI EIBAR-ERMUA</div>
         <div>2026/10/19-30</div>

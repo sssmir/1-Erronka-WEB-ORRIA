@@ -1,0 +1,22 @@
+.mark_dok{
+    margin-left: 40px;
+    left: 20%;
+}
+
+.mark_dok_img{
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
