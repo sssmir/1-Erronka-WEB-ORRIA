@@ -41,7 +41,7 @@
     font-size: 20px;
 }
 
-.boton_iniciosesion{
+.er_boton{
     display: block;
     box-sizing: border-box;
     width: 72%;
@@ -54,7 +54,7 @@
     text-decoration: none;
 }
 
-.boton_iniciosesion:hover{
+.er_boton:hover{
     background-color:rgb(200, 255, 255);
     box-shadow: 2px 10px 13px #111;
 }
