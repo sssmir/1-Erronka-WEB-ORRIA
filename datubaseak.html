@@ -16,11 +16,77 @@
         <a href="Saioahasi.html"><img class="erabiltzailea" src="img/erabiltzailea.png"></a>
     </div>
     <main>
-        <h2 class="dokumentazio_titulo">Datu baseak</h2>
+        <div class="db_dok">
+            <h1>Datu baseak - Proiektuaren Dokumentazioa</h1>
+                <h2>1. Brainstorming and general idea</h2>
+                    <h3>1.1. Brainstorming</h3>
+                        <p>We held a brainstorming session to generate as many ideas as possible. With it we identified most of the entities and attributes of the final database.</p>
+                    <h3>1.2. General idea</h3>
+                        <p>We then linked the ideas together and adapted them to our website, designing an initial schema that was clear and easy to build. This made the E-R diagram easier to create.</p>
+                        <img src="img/DB1.jpg" class="db_dok_img2">
+        </div>
 
+        <hr>
 
+        <div class="db_dok">
+                <h2>2. E/R diagram</h2>
+                    <h3>2.1. Final Entity-Relationship (ER) diagram design</h3>
+                        <p>The final design was made in three steps:</p>
+                        <ol>
+                            <li>Streamline the schema to our real needs (we discarded the production section and the "Komentario" entity).</li>
+                            <li>Draw it on paper with all attributes, cardinalities and the precise notation.</li>
+                            <li>Correct the errors found to reach the definitive draft.</li>
+                        </ol>
+                        <img src="img/DB2.jpg" class="db_dok_img">
+                    <h3>2.2. Digitize the E/R diagram</h3>
+                        <p>We transferred the pencil draft to <strong>Microsoft Visio</strong> using its shapes and connectors, with a different color for each element (for example, green for relationships).</p>
+                        <img src="img/DB5.png" class="db_dok_img">
+                    <h3>2.3. Explanation</h3>
+                        <p>The database stores the data of a company with a web platform similar to Netflix.</p>
+                        <ul>
+                            <li><strong>User:</strong> name, ID, password, account creation date, date of birth and email. Each user has one subscription and one role.</li>
+                            <li><strong>Subscription and plan:</strong> there are 4 plans (individual basic, individual premium, family basic and family premium). Splitting them into two entities lets us identify users sharing a family plan. A subscription has between 1 and 5 users and is linked to one plan; a plan can have many subscriptions.</li>
+                                <ul>
+                                    <li><em>Plan:</em> name, ID, price per month and description.</li>
+                                    <li><em>Subscription:</em> ID, payment method, duration, start date and renewal type (automatic or manual).</li>
+                                </ul>
+                            <li><strong>Role:</strong> only two exist, adults and kids. It stores name, ID and access type (complete access or under-18 content only). 18+ content is seen only by adults; children's content by both.</li>
+                            <li><strong>Content:</strong> title, ID, minimum age, duration, likes and dislikes. A user can watch many contents and vice versa; the relationship stores the stop marker, the feedback and the timestamp of the last point watched.</li>
+                            <li><strong>Content types:</strong> a complete exclusive ISA relation with 3 sub-entities: film, documentary and episodes. Episodes belong to a <strong>season/serie</strong> (ID and title), which has many episodes.</li>
+                            <li><strong>Genre:</strong> ID and name, many-to-many with content. A recursive relationship handles subgenres: each genre has 0 or many subgenres, and each subgenre belongs to one genre.</li>
+                        </ul>
+        </div>
 
+        <hr>    
 
+        <div class="db_dok">
+                <h2>3. Relational model</h2>
+                        <p>Primary keys are <u>underlined</u> and foreign keys are <mark>highlighted</mark>.</p>
+                        <ul>
+                            <li><strong>Plan:</strong> ( <u>IDplan</u>, name, price, description )</li>
+                            <li><strong>Subscription:</strong> ( <u>IDsubscription</u>, paying method, renew type, duration, date start, <mark>IDplan</mark> )</li>
+                            <li><strong>Users:</strong> ( <u>IDuser</u>, name, password, date of birth, date of creation, email, <mark>IDsubscription</mark>, <mark>IDrole</mark> )</li>
+                            <li><strong>Role:</strong> ( <u>IDrole</u>, name, access type )</li>
+                            <li><strong>Content:</strong> ( <u>IDcontent</u>, title, minimum age, duration, summary )</li>
+                            <li><strong>Film:</strong> ( <u>IDcontent</u> )</li>
+                            <li><strong>Documentary:</strong> ( <u>IDcontent</u> )</li>
+                            <li><strong>Episodes:</strong> ( <u>IDcontent</u>, <mark>IDseason</mark> )</li>
+                            <li><strong>Serie / season:</strong> ( <u>IDseason</u>, title )</li>
+                            <li><strong>Content + role:</strong> ( <mark><u>IDrole</u></mark>, <mark><u>IDcontent</u></mark> )</li>
+                            <li><strong>Content + users:</strong> ( <mark><u>IDuser</u></mark>, <mark><u>IDcontent</u></mark>, <u>time stamp</u>, <u>stop mark</u>, <u>feedback</u> )</li>
+                        </ul>
+        </div>
+
+        <hr>
+
+        <div class="db_dok">
+            <h2>4. Normalization</h2>
+                    <ul>
+                        <li><strong>First normal form (atomic values):</strong> there is no repeated data, so the model is already in 1NF.</li>
+                        <li><strong>Second normal form (functional dependency):</strong> every attribute depends fully on the primary key of its table, so it is also in 2NF.</li>
+                        <li><strong>Third normal form
+                    </ul>
+        </div>
     </main>
     <div class="footer">
         <div>1. Erronka / UNI EIBAR-ERMUA</div>
