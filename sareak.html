@@ -26,58 +26,66 @@
         <div class="sare_dok">
                 <h2>1. Materiala eta Kableak</h2>
                     <p>Prozesuari hasiera emateko, beharrezko materialak eta kableak lortu eta kokatu ditugu (<em>lortu/kokatu</em>), azpiegitura fisikoaren oinarriak ezartzeko.</p>
+                    <img src="img/cables.jpg" class="sare_dok_img">
+
+                    <img src="img/cablespatch.jpg" class="sare_dok_img">
+
+                    <img src="img/cablehembra.jpg" class="sare_dok_img">
+
+
+
         </div>
 
         <hr>
 
         <div class="sare_dok">
-            <h2>2. Pasahitza eta ASCII Biherketa</h2>
-                <p>Proiekturako pasahitz bat aukeratu dugu: <strong><code>admin123</code></strong>.</p>
-                <p>Ondoren, pasahitz honen karaktere bakoitza bere balio ASCIIra (binarioan) bihurtu dugu:</p> 
-                <ul>
-                    <li><strong>a</strong> → <code>01100001</code></li>
-                    <li><strong>d</strong> → <code>01100100</code></li>
-                    <li><strong>m</strong> → <code>01101101</code></li>
-                    <li><strong>i</strong> → <code>01101001</code></li>
-                    <li><strong>n</strong> → <code>01101110</code></li>
-                    <li><strong>1</strong> → <code>00110001</code></li>
-                    <li><strong>2</strong> → <code>00110010</code></li>
-                    <li><strong>3</strong> → <code>00110011</code></li>
-                </ul>
+                <h2>2. Pasahitza eta ASCII Biherketa</h2>
+                    <p>Proiekturako pasahitz bat aukeratu dugu: <strong><code>admin123</code></strong>.</p>
+                    <p>Ondoren, pasahitz honen karaktere bakoitza bere balio ASCIIra (binarioan) bihurtu dugu:</p> 
+                    <ul>
+                        <li><strong>a</strong> → <code>01100001</code></li>
+                        <li><strong>d</strong> → <code>01100100</code></li>
+                        <li><strong>m</strong> → <code>01101101</code></li>
+                        <li><strong>i</strong> → <code>01101001</code></li>
+                        <li><strong>n</strong> → <code>01101110</code></li>
+                        <li><strong>1</strong> → <code>00110001</code></li>
+                        <li><strong>2</strong> → <code>00110010</code></li>
+                        <li><strong>3</strong> → <code>00110011</code></li>
+                    </ul>
         </div>
 
         <hr>
 
         <div class="sare_dok">
-            <h2>3. CRC Kalkulua eta Gehitzea</h2>
-                <p>Datuen osotasuna eta erroreen detekzioa bermatzeko, aukeratutako pasahitzari CRC-6 algoritmoz lortutako kodea kalkulatu eta gehitu diogu:</p>   
-                <ul>
-                    <li><strong>Gehitutako CRC kodea:</strong> <code>001000</code></li>
-                </ul>
-                <p>Matea osoa (ASCII pasahitza + CRC) transmisiorako prest utzi dugu.</p>
+                <h2>3. CRC Kalkulua eta Gehitzea</h2>
+                    <p>Datuen osotasuna eta erroreen detekzioa bermatzeko, aukeratutako pasahitzari CRC-6 algoritmoz lortutako kodea kalkulatu eta gehitu diogu:</p>   
+                    <ul>
+                        <li><strong>Gehitutako CRC kodea:</strong> <code>001000</code></li>
+                    </ul>
+                    <p>Matea osoa (ASCII pasahitza + CRC) transmisiorako prest utzi dugu.</p>
         </div>
 
         <hr>
 
         <div class="sare_dok">
-            <h2>4. Modulazio Teknologiak</h2>
-                <p>Lortutako kate osoa (ASCII testua + CRC) modulazio digital ezberdinetara igaro dugu:</p>
-                <ul>
-                    <li><strong>ASK(2)</strong> (<em>Amplitude-Shift Keying</em>)</li>
-                    <li><strong>PSK(2)</strong> (<em>Phase-Shift Keying</em>)</li>
-                    <li><strong>FSK(2)</strong> (<em>Frequency-Shift Keying</em>)</li>
-                </ul>
+                <h2>4. Modulazio Teknologiak</h2>
+                    <p>Lortutako kate osoa (ASCII testua + CRC) modulazio digital ezberdinetara igaro dugu:</p>
+                    <ul>
+                        <li><strong>ASK(2)</strong> (<em>Amplitude-Shift Keying</em>)</li>
+                        <li><strong>PSK(2)</strong> (<em>Phase-Shift Keying</em>)</li>
+                        <li><strong>FSK(2)</strong> (<em>Frequency-Shift Keying</em>)</li>
+                    </ul>
         </div>
 
         <hr>
 
         <div class="sare_dok">
-            <h2>5. Linea-Kodifikazioak (Manchester)</h2>
-                <p>Azkenik, seinalea hobeto garraiatzeko eta sinkronizazioa bermatzeko, informazio guztia bi linea-kodifikazio hauetara igaro dugu:</p>
-                <ul>
-                    <li><strong>Manchester Normala</strong></li>
-                    <li><strong>Manchester Diferentziala</strong></li>
-                </ul>
+                <h2>5. Linea-Kodifikazioak (Manchester)</h2>
+                    <p>Azkenik, seinalea hobeto garraiatzeko eta sinkronizazioa bermatzeko, informazio guztia bi linea-kodifikazio hauetara igaro dugu:</p>
+                    <ul>
+                        <li><strong>Manchester Normala</strong></li>
+                        <li><strong>Manchester Diferentziala</strong></li>
+                    </ul>
         </div>
         <br>
     </main>
