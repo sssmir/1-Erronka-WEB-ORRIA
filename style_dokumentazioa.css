@@ -17,7 +17,7 @@
     border-radius: 10px;
     background-color: #000000;
     box-shadow: 0px 10px 13px #8bfffd;   
-    transition: transform 0.3s ease, box-shadow 0.3s ease;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
 }
 
 .box:hover{
@@ -29,7 +29,7 @@
 
 .box_img{  
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px;  
 }
 
 .box_titulo{
