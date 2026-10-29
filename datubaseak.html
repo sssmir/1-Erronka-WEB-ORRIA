@@ -80,13 +80,50 @@
         <hr>
 
         <div class="db_dok">
-            <h2>4. Normalization</h2>
-                    <ul>
-                        <li><strong>First normal form (atomic values):</strong> there is no repeated data, so the model is already in 1NF.</li>
-                        <li><strong>Second normal form (functional dependency):</strong> every attribute depends fully on the primary key of its table, so it is also in 2NF.</li>
-                        <li><strong>Third normal form
-                    </ul>
+                <h2>4. Normalization</h2>
+                        <h3>4.1. Atomic values - First normal form</h3>
+                            <p>Our relational model does not have any repeated data, so our relational model is already in first normal form.</p>
+
+                        <h3>4.2. Functional dependency - Second normal form</h3>
+                            <p>All of the attributes in our relational model are fully dependent on the primary key of each table. Because of that, our relational model is also already in second normal form.</p>
+
+                        <h3>4.3. Transitive dependency - Third normal form</h3>
+                            <p>In our relational model, no dependency between attributes of the same table could be found. Because of that, our relational model is in third normal form and is completely normalized.</p>
         </div>
+
+        <hr>
+
+        <div class="db_dok">
+                <h2>5. Access</h2>
+                    <h3>5.1. Constraints, integrity rules and registered data</h3>
+                        <p>Every table has an automatic ID. Numerical fields are empty by default. Date fields default to today's date, accept dates from 02/02/2026 onwards, and show "This date can not be possible" if the date is incorrect.</p>
+                    <h3>5.1.1. Subscription</h3>
+                        <img src="img/DB8.png" class="db_dok_img3">
+                        <p>Payment method chosen from four options, automatic renewal by default, maximum duration of 12 months, start date later than 02/02/2026, and a foreign key to the plan.</p>
+                    <h3>5.1.2. User</h3>
+                        <img src="img/DB10.png" class="db_dok_img3">
+                        <p>Name and email (no duplicates, name up to 20 characters), password (up to 20 characters), date of birth (from 02/02/1926), account creation date (from 02/02/2026), and foreign keys to the subscription and the role.</p>
+                    <h3>5.1.3. Content + User</h3>
+                        <img src="img/DB9.png" class="db_dok_img3">
+                        <p>User ID, content ID, timestamp (dd/mm/yyyy hh:nn:ss), stop mark (default 0:00:00), and feedback (like, dislike or no feedback, the latter by default).</p>
+                    <h3>5.1.4. Content</h3>
+                        <img src="img/DB12.png" class="db_dok_img3">
+                        <p>Title, age rating (+18 or -18), duration (default 0:00:00), and summary.</p>
+                    <h3>5.1.5. Genre</h3>
+                        <img src="img/DB18.png" class="db_dok_img3">
+                        <p>Genre name and, if it is a subgenre, the ID of its parent genre.</p>
+                    <h3>5.1.6. Other tables</h3>
+                        <img src="img/DB32.png" class="db_dok_img3">
+                        <p> <strong>Plan</strong> (name, price in currency format, description), <strong>Role</strong> (name), <strong>Series/Season</strong> (title and season), <strong>Film</strong>, <strong>Documentary</strong> (content ID only), <strong>Episode</strong> (content ID and season ID), <strong>Content + Role and Genre + Content</strong> (only the two foreign keys).</p>
+        </div>
+
+        <hr>
+
+        <div class="db_dok">
+                <h2>6. Conclusion</h2>
+                        <p>Implementing a Database Management System (DBMS) offers big advantages over simple text files by keeping information organized and avoiding duplicates—such as saving user usernames like carlos_dev88 safely and keeping Inception's genre details in one single place. On the other hand, storing data in messy files or basic spreadsheets causes bad problems like mismatched info when updates are forgotten and broken links that leave orphan records all over the system.</p> 
+        </div>
+        <br>
     </main>
     <div class="footer">
         <div>1. Erronka / UNI EIBAR-ERMUA</div>
