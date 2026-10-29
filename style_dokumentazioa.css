@@ -17,7 +17,7 @@
     border-radius: 10px;
     background-color: #000000;
     box-shadow: 0px 10px 13px #8bfffd;   
-    transition: 0.3s ease;
+    transition: 0.3s;   
 }
 
 .box:hover{
