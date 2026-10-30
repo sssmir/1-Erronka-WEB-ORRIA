@@ -5,24 +5,18 @@
 }
 
 .db_dok_img{
-    display: flex;
-    justify-content: space-evenly;
     height: 400px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .db_dok_img2{
-    display: flex;
-    justify-content: space-evenly;
     height: 800px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .db_dok_img3{
-    display: flex;
-    justify-content: space-evenly;
     width: 800px;
     margin-top: 30px;
     margin-bottom: 30px;
