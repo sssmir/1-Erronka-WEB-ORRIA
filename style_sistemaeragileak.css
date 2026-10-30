@@ -4,8 +4,6 @@
 }
 
 .sist_dok_img{
-    display: flex;
-    justify-content: space-evenly;
     height: 400px;
     margin-top: 30px;
     margin-bottom: 30px;
